@@ -1,0 +1,106 @@
+\documentclass[svgnames,11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+\usepackage[english]{babel}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+
+\usepackage[resetlabels]{multibib}
+\newcites{New}{Other work}
+
+\patchcmd{\thebibliography}{\section*{\refname}}{}{}{}
+
+\title{%
+        \vspace{-2\baselineskip}
+            \normalsize
+            {\textbf{Kyle E. MacDonald }}\\
+            \vspace{0.5\baselineskip}
+            \hrule
+            \vspace{0.5\baselineskip}
+            Post-doctoral Researcher, Department of Communications, University of California, Los Angeles\\
+            \textit{e-mail:} kemacdonald@ucla.edu,
+            \textit{site}: \href{https://kemacdonald.com}{https://kemacdonald.com}
+        \vspace{-1.5ex}
+}        
+\date{}
+\begin{document}
+\maketitle
+\vspace{-4\baselineskip}
+\subsection*{(a) Professional Preparation}
+\begin{table}[H]
+\centering
+\begin{tabular}{llr}
+\hline
+Institute                                                & Major          & Degree, Year            \\ \hline
+Wesleyan University, Middletown, CT                      & Psychology     & Bachelors, 2010       \\
+Stanford University, Stanford, CA                        & Developmental Psychology  & Masters, 2016       \\
+Stanford University, Stanford, CA                        & Developmental Psychology  & Doctoral, 2018       \\
+University of California, Los Angeles, CA                & Communications            & Post-doctoral, 2019
+\end{tabular}
+\end{table}
+
+\subsection*{(b) Appointments}
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+2018-present   & Post-doc research scientist, Emergence of Communication Lab, UCLA \\
+2016-2017   & Instructor, Developmental Psychology, Stanford University, CA                \\
+2013-2018   & Teaching Assistant, Psychology department, Stanford University, CA                   \\
+2010-2013   & Research Associate, Language Learning Lab, Stanford University, CA                        
+\end{tabular}
+\end{table}
+\subsection*{(c) Products}
+
+\underline{Related to project}
+\nocite{macdonald2018real}
+\nocite{macdonald2018noise}
+\nocite{macdonald2017information}
+\nocite{macdonald2018children}
+\nocite{macdonald2019integration}
+
+\bibliographystyle{acm}
+\bibliography{macdonald}
+
+\noindent
+\underline{Others of significance}
+
+\nociteNew{macdonald2017social}
+\nociteNew{macdonald2013my}
+\nociteNew{hardwicke2018data} 
+\nociteNew{sanchez2019childes}
+\nociteNew{yoon2018balancing} 
+\nociteNew{barth2014preschoolers}
+
+\bibliographystyleNew{acm}
+\bibliographyNew{macdonald}
+
+\subsection*{(d) Synergistic Activities}
+\begin{enumerate}
+
+\item Publicly available eye tracking analyses and software development (\href{https://github.com/kemaconald}{https://github.com/kemaconald}). Some examples include:
+    \begin{itemize}
+        \item \underline{Rtobii}: R Package with utility functions for reading and parsing Tobii eyetracking data [\href{https://github.com/kemacdonald/Rtobii}{link}].
+        \item \underline{iChartAnalyzeR}: R-package with utility functions for analyzing eyetracking studies in the style of the Language Learning Lab at Stanford University [\href{https://github.com/kemacdonald/iChartAnalyzeR}{link}].
+        \item cluster-based permutation analysis of eye tracking data in R [\href{https://kemacdonald.com/materials/cesana-arlotti_cluster_analysis.nb.html}{link}]
+    \end{itemize}
+
+\item Presented research at a 3-day mini-conference in Stockholm (Sweden) on Multimodal Multilingual Outcomes in Deaf and Hard-of-Hearing Children (\href{https://www.ntid.rit.edu/mmoworkshop/}{link}). Work showed how eye movements can be used to measure language abilities in early-identified deaf infants.
+\item Organized a symposium at the Society for Research in Child Development on New Approaches to Understanding Human Language: Insights from Neuroimaging and Behavioral Studies of Visual Language Learners. 
+\item Presented research on sign language processing at the annual Early Hearing Detection and Intervention Meeting. Discussed with clinicians the evidence that the development of visual language processing follows a similar trajectory as spoken language processing.
+\item Publicly available tutorial on Bayesian Linear Mixed Model analyses in the R programming language [\href{https://kemacdonald.com/materials/langcog_rstanarm_tutorial_sleep.nb.html}{link}].
+\item Guest lecturer for (1) Linguistics 140 (Sign Language Acquisition), Stanford University and (2) Psych One (Language), Stanford University.
+\item Head Teaching Assistant for Stats 60: Intro to Statistical Methods, Stanford University: Developed teaching materials, including an interactive tutorial on exploratory data visualization skills [\href{https://kemacdonald.com/materials/P10_section_week9_viz_students.html}{link}].
+
+\end{enumerate}
+\end{document}
